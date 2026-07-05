@@ -196,26 +196,19 @@
   border-radius: 20px;
   overflow: hidden;
 }
-.grad-project-img-wrap {
-  height: 320px;
-  overflow: hidden;
-}
+.grad-project-img-wrap { height: 320px; overflow: hidden; }
 .grad-big-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  transition: transform 0.4s ease;
+  width: 100%; height: 100%;
+  object-fit: contain; object-position: center;
+  background: #0d0d1a;
+  display: block; transition: transform 0.4s ease;
 }
 .grad-project-card:hover .grad-big-img { transform: scale(1.04); }
-.grad-project-body {
-  padding: 2rem 2rem 2rem 0;
-}
+.grad-project-body { padding: 2rem 2rem 2rem 0; }
 @media (max-width: 768px) {
-  .grad-project-card { grid-template-columns: 1fr; }
+  .grad-project-card { grid-template-columns: 1fr; gap: 0; }
   .grad-project-img-wrap { height: 220px; }
-  .grad-project-body { padding: 1.5rem; }
+  .grad-project-body { padding: 1.25rem; }
 }
 
 /* ===== RESET & BASE ===== */
@@ -1175,7 +1168,7 @@ footer {
       <div class="grad-project-body">
         <div class="proj-grad-label" style="margin-bottom:0.5rem;">🎓 Graduation Project</div>
         <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin-bottom:1rem;">
-          <h3 style="font-family:var(--font-head); font-size:1.1rem; font-weight:800; letter-spacing:-0.02em; line-height:1.2; white-space:nowrap;">MYM — Plastic-to-Tiles Machine</h3>
+          <h3 style="font-family:var(--font-head); font-size:1.1rem; font-weight:800; letter-spacing:-0.02em; line-height:1.2;">MYM — Plastic-to-Tiles Machine</h3>
           <a onclick="openMYMDetail(); return false;" href="#" class="proj-linkedin-btn" style="flex-shrink:0; margin-top:0.4rem;" title="View Project">
             <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
             View Project
